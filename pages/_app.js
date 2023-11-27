@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
             console.log(token);
             try{
             if(token)
-            {const res=await axios.get('http://localhost:3030/auth/user',{headers:{
+            {const res=await axios.get('https://smart-heath-be.vercel.appauth/user',{headers:{
                 authorization: `Bearer ${token.token}`
             }});
         

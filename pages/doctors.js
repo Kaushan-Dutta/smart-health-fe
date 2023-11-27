@@ -19,7 +19,7 @@ const doctors = () => {
     useEffect(()=>{
         const loadContents=async()=>{
         try{
-            const res=await axios.get('http://localhost:3030/doctors');
+            const res=await axios.get('https://smart-heath-be.vercel.app/doctors');
             setDoctors(res.data.message);
         }
         catch(err){
